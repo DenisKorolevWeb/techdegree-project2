@@ -1,0 +1,117 @@
+/* ==========================
+Base Element Styles
+=========================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4{
+    color: black;
+    text-align: center;
+}
+
+h1,
+h2{
+    text-transform: uppercase;
+}
+
+
+body {
+    background: white;
+    font-family: 'Roboto', sans-serif;   
+    line-height: 1.6em;
+}
+
+header{
+
+    /* border:solid 1px red; */
+    padding-top: 10px;
+    background-color: turquoise;
+    margin-bottom: 60px;
+}
+
+/* ==========================
+Base Layout Styles
+=========================== */
+
+/* Navigation */
+
+.main-nav{
+    
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin-bottom: 30px;
+}
+
+li{
+    background-color: white;
+    margin: 5px 15px;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Header Banner*/
+.main-banner{
+    /* border:solid 1px red; */
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.profile-img{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+}
+.profile-greet{
+    text-align: center;
+  
+}
+
+/* Main content area */
+
+.portfolio{
+   
+    width: 95%;
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    width: 90%;
+}
+
+/* Clearfix */
+
+.clearfix{
+    content: " ";
+    display: table;
+    clear: both;
+   
+}
