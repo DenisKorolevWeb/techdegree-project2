@@ -24,7 +24,10 @@ h4{
     text-align: center;
 }
 
-h1,
+h1{
+    text-transform: capitalize;
+    font-weight: 900;
+}
 h2{
     text-transform: uppercase;
 }
@@ -44,6 +47,10 @@ header{
     margin-bottom: 60px;
 }
 
+ul{
+    text-align: center;
+}
+
 /* ==========================
 Base Layout Styles
 =========================== */
@@ -60,6 +67,7 @@ Base Layout Styles
 
 li{
     background-color: white;
+    color: rgb(37, 28, 2);
     margin: 5px 15px;
     padding: 5px 0 5px 0;
     font-weight: bold;
@@ -88,8 +96,45 @@ li{
 /* Main content area */
 
 .portfolio{
-   
     width: 95%;
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+.page-name{
+    margin-bottom: 40px;
+}
+
+.skills-name{
+    margin: 70px auto 0px auto;
+}
+.skills-img{
+    margin: 0;
+    width: 80%;
+}
+
+.skills-list{
+    margin-bottom: 70px;
+}
+
+.contact-name{
+    margin-bottom: 40px;
+}
+
+.contact{
+    
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: turquoise;
+    text-align: center;
+  
+  
+}
+
+.skills-p{
+    padding-bottom: 20px;
+}
+
+.container{
     margin: 30px auto 30px auto;
     text-align: center;
 }
@@ -104,7 +149,26 @@ li{
 /* Footer */
 
 footer {
-    width: 90%;
+    border-top: solid darkblue 2px;
+    width: 95%;
+    margin: 0 auto 30px auto;
+    
+}
+
+footer{
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: turquoise;
+}
+.footer-name{
+    text-transform: capitalize;
+    float: left;
+    margin-left: 20px;
+}
+.back-to-top{
+    text-transform: uppercase;
+    float: right;
+    margin-right: 20px;
 }
 
 /* Clearfix */
