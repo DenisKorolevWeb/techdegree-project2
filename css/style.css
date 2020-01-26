@@ -8,8 +8,8 @@ Base Element Styles
 
 img{
     max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 p{
@@ -95,11 +95,7 @@ li{
 
 /* Main content area */
 
-.portfolio{
-    width: 95%;
-    margin: 30px auto 30px auto;
-    text-align: center;
-}
+
 .page-name{
     margin-bottom: 40px;
 }
@@ -123,7 +119,7 @@ li{
 .contact{
     
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: turquoise;
     text-align: center;
   
@@ -135,9 +131,20 @@ li{
 }
 
 .container{
+    width: 95%;
     margin: 30px auto 30px auto;
     text-align: center;
 }
+
+.marketing-page,
+.calculator,
+.travel-app,
+.map-spots,
+.photo-gallery,
+.search-page{
+        padding-left: 1em;
+        padding-right: 1em;  
+    }
 
 
 
@@ -149,17 +156,16 @@ li{
 /* Footer */
 
 footer {
-    border-top: solid darkblue 2px;
-    width: 95%;
-    margin: 0 auto 30px auto;
     
-}
-
-footer{
+    border-top: solid darkblue 2px;
+    width: 100%;
+    
     font-size: 1.1em;
     font-weight: bold;
     background-color: turquoise;
+    
 }
+
 .footer-name{
     text-transform: capitalize;
     float: left;
@@ -169,6 +175,59 @@ footer{
     text-transform: uppercase;
     float: right;
     margin-right: 20px;
+}
+
+
+/* Media queries */
+
+@media (min-width: 769px){
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .marketing-page,
+    .calculator,
+    .travel-app,
+    .map-spots,
+    .photo-gallery,
+    .search-page{
+        float: left;
+        width:50%;
+        /* padding-right: 5px; */
+    }
+    
+
+    
+}
+
+@media (min-width: 1025px){
+
+    .container{
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
+    
+    .marketing-page,
+    .map-spots{
+        width: 33.3%;
+       
+       
+    }
+    .search-page,
+    .photo-gallery{
+      
+        width: 33.3%;
+    }
+   
+    .travel-app,
+    .calculator{
+        width: 33.3%;
+      
+    }
+  
 }
 
 /* Clearfix */
