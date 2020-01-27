@@ -13,6 +13,7 @@ img {
 }
 
 a {
+    font-family: 'Roboto Slab', cursive;
     text-decoration: none;
     color: black;
 }
@@ -88,7 +89,6 @@ li {
 
 /* Header Banner*/
 .main-banner {
-    /* border:solid 1px red; */
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
@@ -108,7 +108,6 @@ li {
 }
 
 /* Main content area */
-
 
 .page-name {
     margin-bottom: 40px;
@@ -133,13 +132,11 @@ li {
 }
 
 .contact {
-
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: turquoise;
     text-align: center;
-
-
+    color: rgb(75, 35, 35);
 }
 
 .skills-p {
@@ -166,14 +163,11 @@ li {
 /* Footer */
 
 footer {
-
     border-top: solid darkblue 2px;
     width: 100%;
-
     font-size: 1.1em;
     font-weight: bold;
     background-color: turquoise;
-
 }
 
 .footer-nav li {
@@ -193,7 +187,7 @@ footer {
 }
 
 
-/* Media queries */
+/* Media queries for 2screen sizes */
 
 @media (min-width: 769px) {
 
@@ -201,7 +195,6 @@ footer {
         display: inline-block;
         margin-left: 20px;
         background-color: turquoise;
-
     }
 
     .profile-greet {
@@ -210,7 +203,6 @@ footer {
         margin-left: 10px;
         padding: 0;
         text-align: left;
-
     }
 
     .profile-img {
@@ -218,7 +210,6 @@ footer {
         width: 30%;
         margin: 0;
     }
-
 
     .container {
         width: 90%;
@@ -274,13 +265,10 @@ footer {
     .marketing-page,
     .map-spots {
         width: 33.3%;
-
-
     }
 
     .search-page,
     .photo-gallery {
-
         width: 33.3%;
     }
 
