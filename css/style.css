@@ -6,40 +6,52 @@ Base Element Styles
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-p{
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-size: 1.3em;
+    font-weight: bolder;
+    border: 2px black solid;
+}
+
+p {
     font-size: 1.1em;
 }
 
 h1,
 h2,
 h3,
-h4{
+h4 {
     color: black;
     text-align: center;
 }
 
-h1{
+h1 {
     text-transform: capitalize;
     font-weight: 900;
 }
-h2{
+
+h2 {
     text-transform: uppercase;
 }
 
 
 body {
     background: white;
-    font-family: 'Roboto', sans-serif;   
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6em;
 }
 
-header{
+header {
 
     /* border:solid 1px red; */
     padding-top: 10px;
@@ -47,7 +59,7 @@ header{
     margin-bottom: 60px;
 }
 
-ul{
+ul {
     text-align: center;
 }
 
@@ -57,15 +69,15 @@ Base Layout Styles
 
 /* Navigation */
 
-.main-nav{
-    
+.main-nav {
+
     text-align: center;
     text-transform: uppercase;
     padding: 10px 10px;
     margin-bottom: 30px;
 }
 
-li{
+li {
     background-color: white;
     color: rgb(37, 28, 2);
     margin: 5px 15px;
@@ -75,7 +87,7 @@ li{
 }
 
 /* Header Banner*/
-.main-banner{
+.main-banner {
     /* border:solid 1px red; */
     text-align: center;
     margin-left: 5%;
@@ -83,55 +95,60 @@ li{
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
-.profile-img{
+
+.profile-img {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 30px;
 }
-.profile-greet{
+
+.profile-greet {
     text-align: center;
-  
+
 }
 
 /* Main content area */
 
 
-.page-name{
+.page-name {
     margin-bottom: 40px;
 }
 
-.skills-name{
+
+.skills-name {
     margin: 70px auto 0px auto;
 }
-.skills-img{
+
+.skills-img {
     margin: 0;
     width: 80%;
 }
 
-.skills-list{
+.skills-list {
     margin-bottom: 70px;
 }
 
-.contact-name{
+.contact-name {
     margin-bottom: 40px;
 }
 
-.contact{
-    
+.contact {
+
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: turquoise;
     text-align: center;
-  
-  
+
+
 }
 
-.skills-p{
+.skills-p {
     padding-bottom: 20px;
 }
 
-.container{
+.container {
     width: 95%;
+    padding-bottom: 10px;
     margin: 30px auto 30px auto;
     text-align: center;
 }
@@ -141,37 +158,35 @@ li{
 .travel-app,
 .map-spots,
 .photo-gallery,
-.search-page{
-        padding-left: 1em;
-        padding-right: 1em;  
-    }
-
-
-
-
-
-
-
+.search-page {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 /* Footer */
 
 footer {
-    
+
     border-top: solid darkblue 2px;
     width: 100%;
-    
+
     font-size: 1.1em;
     font-weight: bold;
     background-color: turquoise;
-    
+
 }
 
-.footer-name{
+.footer-nav li {
+    display: none;
+}
+
+.footer-name {
     text-transform: capitalize;
     float: left;
     margin-left: 20px;
 }
-.back-to-top{
+
+.back-to-top {
     text-transform: uppercase;
     float: right;
     margin-right: 20px;
@@ -180,11 +195,35 @@ footer {
 
 /* Media queries */
 
-@media (min-width: 769px){
+@media (min-width: 769px) {
 
-    .container{
+    .main-nav li {
+        display: inline-block;
+        margin-left: 20px;
+        background-color: turquoise;
+
+    }
+
+    .profile-greet {
+        float: left;
+        width: 65%;
+        margin-left: 10px;
+        padding: 0;
+        text-align: left;
+
+    }
+
+    .profile-img {
+        float: right;
+        width: 30%;
+        margin: 0;
+    }
+
+
+    .container {
         width: 90%;
         margin: 0 auto;
+
     }
 
     .marketing-page,
@@ -192,49 +231,71 @@ footer {
     .travel-app,
     .map-spots,
     .photo-gallery,
-    .search-page{
+    .search-page {
         float: left;
-        width:50%;
-        /* padding-right: 5px; */
+        width: 50%;
     }
-    
 
-    
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        background-color: turquoise;
+
+    }
+
+    .footer-nav {
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1025px) {
 
-    .container{
-        width: 80%;
+    .name {
+        float: left;
+        margin-left: 5%;
+        padding-left: 10px;
+    }
+
+    .main-nav {
+        float: right;
+        margin-right: 3%;
+    }
+
+    .container {
         max-width: 1150px;
-        margin: 0 auto;
     }
-    
+
     .marketing-page,
-    .map-spots{
+    .map-spots {
         width: 33.3%;
-       
-       
+
+
     }
+
     .search-page,
-    .photo-gallery{
-      
+    .photo-gallery {
+
         width: 33.3%;
     }
-   
+
     .travel-app,
-    .calculator{
+    .calculator {
         width: 33.3%;
-      
     }
-  
+
 }
 
 /* Clearfix */
 
-.clearfix{
+.clearfix {
     content: " ";
     display: table;
     clear: both;
-   
+
 }

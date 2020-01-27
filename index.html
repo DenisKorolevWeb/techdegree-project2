@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +10,40 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
+
 <body>
-	<header class="main-header clearfix">
+	<header id="home" class="main-header clearfix">
 		<nav class="nav">
-			<h1>Denis Korolev</h1>
+			<h1 class="name">Denis Korolev</h1>
 			<ul class="main-nav">
-				<li>home</li>
-				<li>portfolio</li>
-				<li>skills</li>
-				<li>contact</li>
+				<li><a href="#home">home</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#skills">skills</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
-		<div class="main-banner">
+		<div class="main-banner clearfix">
+
 			<div class="profile-img" class="profile-img">
 				<img src="img/responsive-layout-profile.png" alt="">
 			</div>
+
 			<div class="profile-greet">
 				<p>
 					Hi! I am front-end developer who loves responsice design
-					and <abbr tittle="Cascading Style Sheets">CSS</abbr>. I 
+					and <abbr tittle="Cascading Style Sheets">CSS</abbr>. I
 					recently finished a degree in front-end
 					<abbr title="World Wide Web">WEB</abbr> development at
-					Treehouse and I am excited to put all my skills to use. 
+					Treehouse and I am excited to put all my skills to use.
 				</p>
 			</div>
 		</div>
+
 	</header>
-		
+
 	<main>
 		<div class="container clearfix">
-			<h2 class="page-name">Portfolio</h2>
+			<h2 id="portfolio" class="page-name">Portfolio</h2>
 			<div class="marketing-page">
 				<img src="img/portfolio-1.png" alt="Marketing Page">
 				<h3>Marketing Page</h3>
@@ -52,7 +57,7 @@
 				<img src="img/portfolio-2.png" alt="Search Page">
 				<h3>Search Page</h3>
 				<p>
-					This project searches through a specific database to find 
+					This project searches through a specific database to find
 					information that the user is trying to look up.
 				</p>
 			</div>
@@ -61,8 +66,8 @@
 				<img src="img/portfolio-3.png" alt="Travel App">
 				<h3>Travel App</h3>
 				<p>
-				   This project compares travel times based on different 
-				   transportation methods and tells you the best
+					This project compares travel times based on different
+					transportation methods and tells you the best
 				</p>
 			</div>
 
@@ -70,8 +75,8 @@
 				<img src="img/portfolio-4.png" alt="Map of Favourite Spots">
 				<h3>Map of Favourite Spots</h3>
 				<p>
-					This project uses maping 
-					<abbr title="Application Program Interface">APIs</abbr> to 
+					This project uses maping
+					<abbr title="Application Program Interface">APIs</abbr> to
 					plot points in the city for a do-it-youself walking tour.
 				</p>
 			</div>
@@ -89,13 +94,13 @@
 				<img src="img/portfolio-6.png" alt="Calculator">
 				<h3>Calculator</h3>
 				<p>
-					Someone can enter in the numbers they want, and press the 
+					Someone can enter in the numbers they want, and press the
 					big blue button and get the result.
 				</p>
 			</div>
 		</div>
 
-		<div class="skills container">
+		<div id="skills" class="skills container">
 			<h2 class="skills-name">Skills</h2>
 			<img class="skills-img" src="img/Web 1920 – 1@2x.png" alt="My Skills">
 			<div class="skills-list">
@@ -112,8 +117,8 @@
 				</ul>
 			</div>
 		</div>
-			
-		<div class="contact">
+
+		<div id="contact" class="contact">
 			<h2 class="contact-name">Contact</h2>
 			<p class="skills-p">
 				If you are interested in chatting or want more information about
@@ -126,10 +131,17 @@
 
 	<footer class="main-footer clearfix">
 		<p class="footer-name">Denis Korolev</p>
-		<p class="back-to-top">back to top</p>
+		<p class="back-to-top"><a href="#home">back to top</a></p>
+		<nav class="nav">
+			<ul class="footer-nav">
+				<li><a href="#home">home</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#skills">skills</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
 	</footer>
 
 </body>
+
 </html>
-
-
