@@ -25,7 +25,8 @@ a:hover {
 }
 
 p {
-    font-size: 1em;    
+    font-size: 1.2em;
+
 }
 
 h1,
@@ -104,7 +105,10 @@ li {
 
 .profile-greet {
     text-align: center;
+}
 
+.profile-greet p {
+    font-size: 1.4em;
 }
 
 /* Main content area */
@@ -112,6 +116,7 @@ li {
 .page-name {
     margin-bottom: 40px;
 }
+
 
 
 .skills-name {
@@ -150,6 +155,10 @@ li {
     text-align: center;
 }
 
+.container p {
+    font-size: 0.8em;
+}
+
 .marketing-page,
 .calculator,
 .travel-app,
@@ -165,10 +174,11 @@ li {
 footer {
     border-top: solid darkblue 2px;
     width: 100%;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: turquoise;
 }
+
 
 .footer-nav li {
     display: none;
